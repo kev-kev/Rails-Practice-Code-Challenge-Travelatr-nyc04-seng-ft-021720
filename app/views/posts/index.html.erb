@@ -1,0 +1,6 @@
+<ul>
+  <%= button_to "Create new blogger", new_blogger_path, method: :get %>
+  <%= @bloggers.each do |blogger| %>
+  <li><%= link_to blogger.name, blogger_path(blogger) %></li>
+  <% end %>
+</ul>

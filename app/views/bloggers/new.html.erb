@@ -1,0 +1,11 @@
+<h2>Create a new blogger</h2>
+<%= form_for :blogger, url: bloggers_path, method: :post do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br />
+  <%= f.label :age %>:
+  <%= f.number_field :age %><br />
+  <%= f.label :bio %>:
+  <%= f.text_area :bio %><br />
+
+  <%= f.submit %>
+<% end %>
